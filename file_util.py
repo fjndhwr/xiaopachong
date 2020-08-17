@@ -1,8 +1,8 @@
 import os
 
 
-def write(title, text):
-    dirs = "d:/jikeshijian/进阶攻略/"
+def write(pretitle, title, text):
+    dirs = "d:/jikeshijian/"+ pretitle +"/"
     if not os.path.exists(dirs):
         os.makedirs(dirs)
     dirs += title + ".md"
